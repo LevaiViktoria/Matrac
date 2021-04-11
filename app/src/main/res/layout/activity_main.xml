@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/termek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Termék rendelés"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+         />
+    <ImageView
+        android:id="@+id/kep"
+        android:layout_below="@+id/termek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/matrac"
+        />
+    <EditText
+        android:id="@+id/nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Név"
+        android:layout_below="@+id/kep"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/irsz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Irányítószám"
+        android:layout_below="@+id/nev"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/telepules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Település"
+        android:layout_below="@+id/irsz"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/szam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Utca/Házszám"
+        android:layout_below="@+id/telepules"
+        android:layout_centerHorizontal="true"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/szam"
+        >
+    <RadioButton
+        android:id="@+id/fizetes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Utánvétel"
+        />
+
+    <RadioButton
+        android:id="@+id/fizetes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fizetes"
+        android:text="Átutalás"
+        />
+    </RadioGroup>
+    <Button
+        android:id="@+id/megrendeles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/szam"
+        android:layout_centerHorizontal="true"
+        android:text="Megrendelés"
+        android:layout_marginTop="60dp"
+        />
+
+
+
+</RelativeLayout>
